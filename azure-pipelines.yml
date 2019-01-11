@@ -13,5 +13,5 @@ variables:
   imageName: 'flippercoin/webapi:$(build.buildId)'
 
 steps:
-- script: docker build -f Dockerfile -t $(imageName) .
-  displayName: 'docker build'
+- script: docker build -f webapi/Dockerfile -t $(imageName) webapi/.
+  displayName: 'webapi - docker build'
