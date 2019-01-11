@@ -15,5 +15,3 @@ variables:
 steps:
 - script: docker build -f webapi/Dockerfile -t $(imageName) webapi/.
   displayName: 'webapi - docker build'
-
-  # test
